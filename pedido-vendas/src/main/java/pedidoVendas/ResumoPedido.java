@@ -4,9 +4,11 @@ public class ResumoPedido {
 
     private double valorTotal;
     private double desconto;
+
     public ResumoPedido(double valorTotal, double desconto) {
         super();
         this.valorTotal = valorTotal;
+        this.desconto = desconto;
     }
 
     public double getValorTotal() {
@@ -24,4 +26,5 @@ public class ResumoPedido {
     public void setDesconto(double desconto) {
         this.desconto = desconto;
     }
+
 }
