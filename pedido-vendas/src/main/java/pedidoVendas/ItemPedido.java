@@ -1,24 +1,22 @@
-public class ItemPedido {
+package pedidoVendas;
 
-    private String item;
+public class ItemPedido {
+    private String descricao;
     private double valorUnitario;
     private int quantidade;
 
-    public ItemPedido(
-            String item,
-            double valorUnitario,
-            int quantidade) {
-        this.item = item;
+    public ItemPedido(String descricao, double valorUnitario, int quantidade) {
+        this.descricao = descricao;
         this.valorUnitario = valorUnitario;
         this.quantidade = quantidade;
     }
 
-    public String getItem() {
-        return item;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setItem(String item) {
-        this.item = item;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     public double getValorUnitario() {
@@ -36,5 +34,4 @@ public class ItemPedido {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
-
 }
